@@ -1,6 +1,6 @@
 
 /* 支付中心相关表结构 */
-
+SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 CREATE TABLE `t_mch_info` (
   `MchId` varchar(30) NOT NULL COMMENT '商户ID',
   `Name` varchar(30) NOT NULL COMMENT '名称',
